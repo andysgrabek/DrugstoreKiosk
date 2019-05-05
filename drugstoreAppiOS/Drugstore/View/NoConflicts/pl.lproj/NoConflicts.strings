@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "SUMMARY"; ObjectID = "6nB-pR-dJS"; */
+"6nB-pR-dJS.text" = "PODSUMOWANIE";
+
+/* Class = "UILabel"; text = "Your combination of drugs doesn't seem to yield any conflicts."; ObjectID = "JEH-gJ-Jfj"; */
+"JEH-gJ-Jfj.text" = "Twoja mieszanka leków nie zawiera leków niezgodnych ze sobą.";
+
+/* Class = "UIButton"; normalTitle = "END"; ObjectID = "gk5-wf-GMN"; */
+"gk5-wf-GMN.normalTitle" = "ZAKOŃCZ";
+
+/* Class = "UILabel"; text = "NO CONFLICTS FOUND"; ObjectID = "jkS-Th-Gmk"; */
+"jkS-Th-Gmk.text" = "BRAK KONFLIKTÓW";

@@ -1,0 +1,18 @@
+
+/* Class = "UILabel"; text = "CONFLICT CHECK"; ObjectID = "3PU-7p-9Mh"; */
+"3PU-7p-9Mh.text" = "KONFLIKTY";
+
+/* Class = "UILabel"; text = "LHS"; ObjectID = "4PM-86-TPr"; */
+"4PM-86-TPr.text" = "LHS";
+
+/* Class = "UILabel"; text = "RHS"; ObjectID = "8fB-XV-gv2"; */
+"8fB-XV-gv2.text" = "RHS";
+
+/* Class = "UILabel"; text = "Conflicts found:"; ObjectID = "Ekh-UE-ypk"; */
+"Ekh-UE-ypk.text" = "Znalezione konflikty:";
+
+/* Class = "UIButton"; normalTitle = "DONE"; ObjectID = "Toe-mc-4BG"; */
+"Toe-mc-4BG.normalTitle" = "ZAKOŃCZ";
+
+/* Class = "UILabel"; text = "Tap a conflict for details"; ObjectID = "uPh-4T-bhK"; */
+"uPh-4T-bhK.text" = "Stuknij konflikt po szczegóły";

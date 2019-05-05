@@ -1,0 +1,21 @@
+
+/* Class = "UILabel"; text = "LHS"; ObjectID = "5f0-Gn-d1m"; */
+"5f0-Gn-d1m.text" = "LHS";
+
+/* Class = "UILabel"; text = "DESCRIPTION"; ObjectID = "FCM-Wa-aod"; */
+"FCM-Wa-aod.text" = "OPIS";
+
+/* Class = "UILabel"; text = "RHS"; ObjectID = "LHf-qs-jGm"; */
+"LHf-qs-jGm.text" = "RHS";
+
+/* Class = "UILabel"; text = "CONFLICT"; ObjectID = "PpH-Hq-2DD"; */
+"PpH-Hq-2DD.text" = "KONFLIKT";
+
+/* Class = "UITextView"; text = "Brak opisu"; ObjectID = "dLG-cD-ZV1"; */
+"dLG-cD-ZV1.text" = "Brak opisu";
+
+/* Class = "UILabel"; text = "CONFLICT DETAILS"; ObjectID = "gHO-bC-Xe4"; */
+"gHO-bC-Xe4.text" = "SZCZEGÓŁY KONFLIKTU";
+
+/* Class = "UIButton"; normalTitle = "BACK TO LIST"; ObjectID = "wrw-eG-c0v"; */
+"wrw-eG-c0v.normalTitle" = "WRÓC DO LISTY";

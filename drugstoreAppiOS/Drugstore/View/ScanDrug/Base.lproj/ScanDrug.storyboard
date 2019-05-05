@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hyE-HW-ldK">
+    <device id="ipad10_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Scan Drug View Controller-->
+        <scene sceneID="gBJ-vm-9Sj">
+            <objects>
+                <viewController id="hyE-HW-ldK" customClass="ScanDrugViewController" customModule="Drugstore" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d4K-FU-BEh">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbE-7B-qRf">
+                                <rect key="frame" x="64" y="84" width="706" height="964"/>
+                                <string key="text">Tap the buttons to the left to add drugs to the list 
+by scanning their barcodes with your camera 
+or by searching for them in our database.</string>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                <color key="textColor" red="0.38431372549019605" green="0.72549019607843135" blue="0.76078431372549016" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yU0-sh-phT">
+                                <rect key="frame" x="16" y="100" width="802" height="996"/>
+                                <color key="backgroundColor" red="0.64313725490196072" green="0.92941176470588238" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="7dF-Zj-VHm">
+                                    <rect key="frame" x="0.0" y="228" width="802" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.64313725489999995" green="0.92941176469999998" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DrugTableViewCell" rowHeight="200" id="gsn-PS-p8p" customClass="DrugTableViewCell" customModule="Drugstore" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="802" height="200"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gsn-PS-p8p" id="Acn-Q4-R4P">
+                                            <rect key="frame" x="0.0" y="0.0" width="802" height="199.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="center" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Lep-q2-ANp">
+                                                    <rect key="frame" x="20" y="31" width="762" height="148.5"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="center" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="PYu-kk-N4l">
+                                                            <rect key="frame" x="0.0" y="7.5" width="627" height="133.5"/>
+                                                            <subviews>
+                                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jg5-FU-0tT">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="627" height="45.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                                                    <color key="textColor" red="0.027450980392156862" green="0.54509803921568623" blue="0.49411764705882355" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingredient" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nV0-IE-ohQ">
+                                                                    <rect key="frame" x="0.0" y="65.5" width="627" height="24"/>
+                                                                    <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
+                                                                    <color key="textColor" red="0.086274509803921567" green="0.6705882352941176" blue="0.61176470588235299" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Code" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="le6-zX-tD6">
+                                                                    <rect key="frame" x="0.0" y="109.5" width="627" height="24"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                                    <color key="textColor" red="0.086274509803921567" green="0.6705882352941176" blue="0.61176470588235299" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k14-Vh-Taw">
+                                                            <rect key="frame" x="637" y="12" width="125" height="125"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" secondItem="k14-Vh-Taw" secondAttribute="height" id="8Am-yE-VVn"/>
+                                                                <constraint firstAttribute="height" relation="lessThanOrEqual" constant="125" id="l0h-vJ-Di2"/>
+                                                            </constraints>
+                                                            <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                                            <inset key="imageEdgeInsets" minX="15" minY="15" maxX="15" maxY="15"/>
+                                                            <state key="normal" image="Cross"/>
+                                                            <connections>
+                                                                <action selector="removePressed:" destination="gsn-PS-p8p" eventType="touchUpInside" id="txJ-T3-YNl"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="k14-Vh-Taw" firstAttribute="centerY" secondItem="Lep-q2-ANp" secondAttribute="centerY" id="ha3-IK-hh2"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.74901960784313726" green="0.96078431372549022" blue="0.98431372549019602" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="Lep-q2-ANp" secondAttribute="trailing" constant="20" id="ACj-vL-1lL"/>
+                                                <constraint firstItem="Lep-q2-ANp" firstAttribute="top" secondItem="Acn-Q4-R4P" secondAttribute="topMargin" constant="20" id="LgR-ft-v1O"/>
+                                                <constraint firstAttribute="bottom" secondItem="Lep-q2-ANp" secondAttribute="bottom" constant="20" id="bCO-Eq-A4g"/>
+                                                <constraint firstItem="Lep-q2-ANp" firstAttribute="leading" secondItem="Acn-Q4-R4P" secondAttribute="leading" constant="20" id="i4x-Sz-2wT"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <integer key="value" value="25"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.64313725489999995" green="0.92941176469999998" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="barcodeLabel" destination="le6-zX-tD6" id="qTS-Cz-Sgc"/>
+                                            <outlet property="ingredientLabel" destination="nV0-IE-ohQ" id="9Z2-1c-ASi"/>
+                                            <outlet property="nameLabel" destination="jg5-FU-0tT" id="eIs-eD-HcU"/>
+                                            <outlet property="removeButton" destination="k14-Vh-Taw" id="8Ow-8V-ley"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mtD-nV-etj">
+                                <rect key="frame" x="32" y="930" width="150" height="150"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="Camera"/>
+                                <connections>
+                                    <action selector="scanDrugPressed:" destination="hyE-HW-ldK" eventType="touchUpInside" id="P0z-Cb-TOT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="suL-62-Kip">
+                                <rect key="frame" x="652" y="930" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="Zbt-3l-Rzt"/>
+                                    <constraint firstAttribute="width" constant="150" id="lcV-6a-Fmj"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="Tick"/>
+                                <connections>
+                                    <action selector="donePressed:" destination="hyE-HW-ldK" eventType="touchUpInside" id="X9w-xF-V26"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOUR DRUG LIST" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hRT-Kc-szH">
+                                <rect key="frame" x="8" y="20" width="818" height="72"/>
+                                <color key="backgroundColor" red="0.46666666666666667" green="0.85882352941176465" blue="0.90196078431372551" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="60"/>
+                                <color key="textColor" red="0.74901960784313726" green="0.96078431372549022" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g36-td-nTU">
+                                <rect key="frame" x="214" y="930" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="QCb-Wd-mLS"/>
+                                    <constraint firstAttribute="width" constant="150" id="syH-VM-iR4"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="Lookup"/>
+                                <connections>
+                                    <action selector="chooseDrugPressed:" destination="hyE-HW-ldK" eventType="touchUpInside" id="115-YA-7o7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.64313725489999995" green="0.92941176469999998" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bbE-7B-qRf" firstAttribute="top" secondItem="aPH-0Q-mvE" secondAttribute="top" constant="64" id="0jZ-2h-e2k"/>
+                            <constraint firstItem="aPH-0Q-mvE" firstAttribute="bottom" secondItem="mtD-nV-etj" secondAttribute="bottom" constant="32" id="2mf-BL-2IG"/>
+                            <constraint firstItem="hRT-Kc-szH" firstAttribute="leading" secondItem="aPH-0Q-mvE" secondAttribute="leading" constant="8" id="5r3-bZ-E3a"/>
+                            <constraint firstItem="suL-62-Kip" firstAttribute="bottom" secondItem="aPH-0Q-mvE" secondAttribute="bottom" constant="-32" id="CbN-ah-Xs9"/>
+                            <constraint firstItem="g36-td-nTU" firstAttribute="bottom" secondItem="aPH-0Q-mvE" secondAttribute="bottom" constant="-32" id="EHG-TP-K69"/>
+                            <constraint firstItem="mtD-nV-etj" firstAttribute="height" secondItem="g36-td-nTU" secondAttribute="height" id="PA0-Bo-VLA"/>
+                            <constraint firstItem="aPH-0Q-mvE" firstAttribute="trailing" secondItem="bbE-7B-qRf" secondAttribute="trailing" constant="64" id="TCm-e8-I6W"/>
+                            <constraint firstItem="hRT-Kc-szH" firstAttribute="top" secondItem="aPH-0Q-mvE" secondAttribute="top" id="WT4-Pu-Tnn"/>
+                            <constraint firstItem="bbE-7B-qRf" firstAttribute="leading" secondItem="aPH-0Q-mvE" secondAttribute="leading" constant="64" id="XPG-by-L5D"/>
+                            <constraint firstItem="g36-td-nTU" firstAttribute="leading" secondItem="mtD-nV-etj" secondAttribute="trailing" constant="32" id="ZXJ-ny-g9t"/>
+                            <constraint firstItem="mtD-nV-etj" firstAttribute="leading" secondItem="aPH-0Q-mvE" secondAttribute="leading" constant="32" id="bXv-Cb-Viu"/>
+                            <constraint firstItem="aPH-0Q-mvE" firstAttribute="bottom" secondItem="yU0-sh-phT" secondAttribute="bottom" constant="16" id="cJe-B0-vL6"/>
+                            <constraint firstItem="suL-62-Kip" firstAttribute="trailing" secondItem="aPH-0Q-mvE" secondAttribute="trailing" constant="-32" id="d4w-B0-utU"/>
+                            <constraint firstItem="yU0-sh-phT" firstAttribute="leading" secondItem="aPH-0Q-mvE" secondAttribute="leading" constant="16" id="mJo-Gh-kiN"/>
+                            <constraint firstItem="mtD-nV-etj" firstAttribute="width" secondItem="g36-td-nTU" secondAttribute="width" id="olE-LN-Wno"/>
+                            <constraint firstItem="yU0-sh-phT" firstAttribute="top" secondItem="hRT-Kc-szH" secondAttribute="bottom" constant="8" id="p82-wi-b18"/>
+                            <constraint firstItem="aPH-0Q-mvE" firstAttribute="bottom" secondItem="bbE-7B-qRf" secondAttribute="bottom" constant="64" id="sfI-RW-dfH"/>
+                            <constraint firstItem="aPH-0Q-mvE" firstAttribute="trailing" secondItem="hRT-Kc-szH" secondAttribute="trailing" constant="8" id="uVj-JP-Flr"/>
+                            <constraint firstItem="aPH-0Q-mvE" firstAttribute="trailing" secondItem="yU0-sh-phT" secondAttribute="trailing" constant="16" id="yP4-y7-Ta3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aPH-0Q-mvE"/>
+                    </view>
+                    <connections>
+                        <outlet property="doneButton" destination="suL-62-Kip" id="1PU-A5-lqP"/>
+                        <outlet property="drugListTableView" destination="yU0-sh-phT" id="oo2-C6-iYr"/>
+                        <outlet property="scanButton" destination="mtD-nV-etj" id="kPl-Fk-YZJ"/>
+                        <outlet property="typeButton" destination="g36-td-nTU" id="iJv-Y2-J5d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LVF-o1-Gw6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="56.115107913669071" y="-111.15107913669065"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Camera" width="250" height="250"/>
+        <image name="Cross" width="180" height="180"/>
+        <image name="Lookup" width="250" height="250"/>
+        <image name="Tick" width="250" height="250"/>
+    </resources>
+</document>

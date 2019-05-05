@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  Drugstore
+
+  Created by Andrzej Grabowski on 19/01/2019.
+  Copyright © 2019 Andrzej Grabowski. All rights reserved.
+*/
+
+"CheckingServerAvailabilityPrompt" = "Checking server availability";
+"ServerUnavailablePrompt" = "Server Unavailable";
+"ValidEmailPrompt" = "You must provide a valid email address";
+"SendingEmailStatus" = "Sending email";
+"EmailSentStatus" = "Sent successfully";
+"EmailNotSentStatus" = "Failed to send";
+"PleaseWaitStatus" = "Please wait";
+"ClosePrompt" = "Close";
+"ScanPrompt" = "Scan barcode";
+"ScanBarcodeInstruction" = "Scan barcode instruction";
+"LookingUpDrugStatus" = "Looking for your drug";
+"AlreadyScannedDrugStatus" = "Already scanned drug";
+"FoundDrugStatus" = "Found drug";
+"FailedToFindDrugStatus" = "Failed to find drug";
+

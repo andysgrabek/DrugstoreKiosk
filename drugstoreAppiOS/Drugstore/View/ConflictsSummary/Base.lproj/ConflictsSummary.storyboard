@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DJ2-hg-c4P">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Conflicts Summary View Controller-->
+        <scene sceneID="i4D-xa-vQU">
+            <objects>
+                <viewController id="DJ2-hg-c4P" customClass="ConflictsSummaryViewController" customModule="Drugstore" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5dR-vM-5IA">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONFLICTS FOUND" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NPK-R7-xMg">
+                                <rect key="frame" x="0.0" y="124" width="768" height="48"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <color key="textColor" red="0.027450980390000001" green="0.5450980392" blue="0.4941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vvM-2r-fpv">
+                                <rect key="frame" x="134" y="450" width="500" height="100"/>
+                                <color key="backgroundColor" red="0.16862745100000001" green="0.7725490196" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="KeI-SS-aid"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="500" id="zoF-Ud-Mng"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <state key="normal" title="SEND EMAIL">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="sendReportPressed:" destination="DJ2-hg-c4P" eventType="touchUpInside" id="fiU-Uf-d0L"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUMMARY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wOL-84-t5a">
+                                <rect key="frame" x="0.0" y="20" width="768" height="72"/>
+                                <color key="backgroundColor" red="0.46666666670000001" green="0.85882352939999995" blue="0.90196078430000004" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="Mff-Ri-Fac"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="60"/>
+                                <color key="textColor" red="0.74901960779999999" green="0.96078431369999995" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your combination of drugs yielded conflicts. Would you like to receive and email with a summary?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVK-2c-ZMD">
+                                <rect key="frame" x="32" y="204" width="704" height="122"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <color key="textColor" red="0.38431372549999998" green="0.72549019609999998" blue="0.76078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="tCg-g1-aB5">
+                                <rect key="frame" x="134" y="358" width="500" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="CV1-eQ-8gc"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                                <connections>
+                                    <action selector="emailEditingDidEnd:" destination="DJ2-hg-c4P" eventType="primaryActionTriggered" id="6ZV-Hq-Stn"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qa7-Wn-aOu">
+                                <rect key="frame" x="134" y="589.5" width="500" height="100"/>
+                                <color key="backgroundColor" red="1" green="0.47058823529999999" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="500" id="N49-lL-8nr"/>
+                                    <constraint firstAttribute="height" constant="100" id="yDS-aH-WK4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <state key="normal" title="SKIP">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="skipPressed:" destination="DJ2-hg-c4P" eventType="touchUpInside" id="l2S-fj-z5K"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.64313725490196072" green="0.92941176470588238" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tCg-g1-aB5" firstAttribute="leading" secondItem="vvM-2r-fpv" secondAttribute="leading" id="4WR-CD-R8x"/>
+                            <constraint firstItem="sVK-2c-ZMD" firstAttribute="top" secondItem="NPK-R7-xMg" secondAttribute="bottom" constant="32" id="6gX-BI-HaI"/>
+                            <constraint firstItem="vvM-2r-fpv" firstAttribute="centerX" secondItem="5dR-vM-5IA" secondAttribute="centerX" id="GN7-7A-0ZW"/>
+                            <constraint firstItem="sVK-2c-ZMD" firstAttribute="leading" secondItem="ux5-ud-lT3" secondAttribute="leading" constant="32" id="JMS-zY-DcI"/>
+                            <constraint firstItem="qa7-Wn-aOu" firstAttribute="top" secondItem="vvM-2r-fpv" secondAttribute="bottom" constant="39.5" id="Yfy-VN-kqg"/>
+                            <constraint firstItem="tCg-g1-aB5" firstAttribute="top" secondItem="sVK-2c-ZMD" secondAttribute="bottom" constant="32" id="b7z-Ur-hSb"/>
+                            <constraint firstItem="NPK-R7-xMg" firstAttribute="top" secondItem="wOL-84-t5a" secondAttribute="bottom" constant="32" id="bEO-CW-dBW"/>
+                            <constraint firstItem="vvM-2r-fpv" firstAttribute="top" secondItem="tCg-g1-aB5" secondAttribute="bottom" constant="32" id="baE-P1-M79"/>
+                            <constraint firstItem="wOL-84-t5a" firstAttribute="leading" secondItem="ux5-ud-lT3" secondAttribute="leading" id="cPw-PO-yaC"/>
+                            <constraint firstItem="sVK-2c-ZMD" firstAttribute="trailing" secondItem="ux5-ud-lT3" secondAttribute="trailing" constant="-32" id="cxR-mP-yl6"/>
+                            <constraint firstItem="NPK-R7-xMg" firstAttribute="leading" secondItem="ux5-ud-lT3" secondAttribute="leading" id="dSy-vr-utv"/>
+                            <constraint firstItem="wOL-84-t5a" firstAttribute="trailing" secondItem="ux5-ud-lT3" secondAttribute="trailing" id="eA4-Ug-lAE"/>
+                            <constraint firstItem="qa7-Wn-aOu" firstAttribute="centerX" secondItem="5dR-vM-5IA" secondAttribute="centerX" id="iek-u6-n8R"/>
+                            <constraint firstItem="wOL-84-t5a" firstAttribute="top" secondItem="ux5-ud-lT3" secondAttribute="top" id="ndD-17-ib9"/>
+                            <constraint firstItem="NPK-R7-xMg" firstAttribute="trailing" secondItem="ux5-ud-lT3" secondAttribute="trailing" id="r3x-Am-I50"/>
+                            <constraint firstItem="vvM-2r-fpv" firstAttribute="width" secondItem="tCg-g1-aB5" secondAttribute="width" id="ws4-TR-cjq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ux5-ud-lT3"/>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="tCg-g1-aB5" id="oks-zl-Mbf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PEo-gc-ZYE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="147.65625" y="58.593749999999993"/>
+        </scene>
+    </scenes>
+</document>

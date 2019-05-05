@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Welcome View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="Welcome" id="BYZ-38-t0r" customClass="WelcomeViewController" customModule="Drugstore" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9dv-TX-ppd">
+                                <rect key="frame" x="134" y="343" width="500" height="100"/>
+                                <color key="backgroundColor" red="1" green="0.47058823529411764" blue="0.59607843137254901" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="UUR-Qt-6s9"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="500" id="YCZ-Mg-tHl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                <state key="normal" title="BEGIN">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="beginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RuZ-vU-QkV"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="cAt-DE-aN3">
+                                <rect key="frame" x="84" y="739.5" width="600" height="194.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Warning" translatesAutoresizingMaskIntoConstraints="NO" id="wEV-HT-VQU">
+                                        <rect key="frame" x="0.0" y="0.0" width="194.5" height="194.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="wEV-HT-VQU" secondAttribute="height" multiplier="1:1" id="hch-tl-0XL"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="Drugs" translatesAutoresizingMaskIntoConstraints="NO" id="KuD-d7-A2h">
+                                        <rect key="frame" x="202.5" y="0.0" width="195" height="194.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="KuD-d7-A2h" secondAttribute="height" multiplier="1:1" id="xVt-3K-dIN"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="Tick" translatesAutoresizingMaskIntoConstraints="NO" id="sie-qb-Ne7">
+                                        <rect key="frame" x="405.5" y="0.0" width="194.5" height="194.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="sie-qb-Ne7" secondAttribute="height" multiplier="1:1" id="5xE-Mt-vik"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="600" id="9b6-hJ-1dd"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are your drugs compatible?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="irt-5U-2gJ">
+                                <rect key="frame" x="94.5" y="82" width="579" height="172"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="579" id="Pg4-0d-6hQ"/>
+                                    <constraint firstAttribute="height" constant="172" id="YRt-rd-gpJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="38"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.64313725490196072" green="0.92941176470588238" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cAt-DE-aN3" secondAttribute="bottom" constant="90" id="DL7-bF-JZ4"/>
+                            <constraint firstItem="cAt-DE-aN3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DiA-0O-1gT"/>
+                            <constraint firstItem="9dv-TX-ppd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-119" id="HgB-Rg-49W"/>
+                            <constraint firstItem="irt-5U-2gJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XT2-ab-dC8"/>
+                            <constraint firstItem="9dv-TX-ppd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b0C-hF-Z36"/>
+                            <constraint firstItem="irt-5U-2gJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="62" id="uTh-57-alJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="143.75" y="113.67187499999999"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Drugs" width="400" height="400"/>
+        <image name="Tick" width="250" height="250"/>
+        <image name="Warning" width="180" height="180"/>
+    </resources>
+</document>

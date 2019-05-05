@@ -1,0 +1,26 @@
+{
+  "name": "drugstore",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@sendgrid/mail": "^6.3.1",
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "nodemon": "^1.18.9",
+    "papaparse": "^4.6.3",
+    "qs": "^6.6.0",
+    "request": "^2.88.0",
+    "rxjs": "^6.3.3",
+    "sendgrid": "^5.2.3",
+    "xmlhttprequest": "^1.8.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

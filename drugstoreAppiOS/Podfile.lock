@@ -1,0 +1,37 @@
+PODS:
+  - Alamofire (4.8.0)
+  - AlamofireObjectMapper (5.2.0):
+    - Alamofire (~> 4.7)
+    - ObjectMapper (~> 3.4)
+  - BarcodeScanner (4.1.3)
+  - IHProgressHUD (0.1.4)
+  - ObjectMapper (3.4.2)
+  - StatusAlert (1.1.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.8)
+  - AlamofireObjectMapper (~> 5.2)
+  - BarcodeScanner (~> 4.1)
+  - IHProgressHUD (~> 0.1.4)
+  - StatusAlert (~> 1.1.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - AlamofireObjectMapper
+    - BarcodeScanner
+    - IHProgressHUD
+    - ObjectMapper
+    - StatusAlert
+
+SPEC CHECKSUMS:
+  Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
+  AlamofireObjectMapper: 92b6ce2423a9d159e686f6a1d514a009bf903ddc
+  BarcodeScanner: fce1ad2b3f28286b1ab5091fe0979789618bee27
+  IHProgressHUD: a01846bfbb581c761c79747c67b08387c3bdfae3
+  ObjectMapper: 0d4402610f4e468903ae64629eec4784531e5c51
+  StatusAlert: 4d6dadebf5f7abd5648fa774ef3062f2f95cc4aa
+
+PODFILE CHECKSUM: 2d70c3826ae11855e2e2bc3a241dd78298a791ad
+
+COCOAPODS: 1.5.3

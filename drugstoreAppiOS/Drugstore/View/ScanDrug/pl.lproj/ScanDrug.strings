@@ -1,0 +1,15 @@
+
+/* Class = "UILabel"; text = "Tap the buttons to the left to add drugs to the list \nby scanning their barcodes with your camera \nor by searching for them in our database."; ObjectID = "bbE-7B-qRf"; */
+"bbE-7B-qRf.text" = "Użyj przycisków u dołu po lewo aby dodać leki do listy przez zeskanowanie ich kodu lub przez wyszukanie ich w naszej bazie. Gdy wybierzesz wszystkie leki, wciśnik przycisk u dołu po prawej";
+
+/* Class = "UILabel"; text = "YOUR DRUG LIST"; ObjectID = "hRT-Kc-szH"; */
+"hRT-Kc-szH.text" = "TWOJA LISTA LEKÓW";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "jg5-FU-0tT"; */
+"jg5-FU-0tT.text" = "Nazwa";
+
+/* Class = "UILabel"; text = "Code"; ObjectID = "le6-zX-tD6"; */
+"le6-zX-tD6.text" = "Kod";
+
+/* Class = "UILabel"; text = "Ingredient"; ObjectID = "nV0-IE-ohQ"; */
+"nV0-IE-ohQ.text" = "Składnik";

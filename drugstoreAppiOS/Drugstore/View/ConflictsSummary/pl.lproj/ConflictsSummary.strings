@@ -1,0 +1,15 @@
+
+/* Class = "UILabel"; text = "CONFLICTS FOUND"; ObjectID = "NPK-R7-xMg"; */
+"NPK-R7-xMg.text" = "KONFLIKTY";
+
+/* Class = "UIButton"; normalTitle = "SKIP"; ObjectID = "qa7-Wn-aOu"; */
+"qa7-Wn-aOu.normalTitle" = "POMIŃ";
+
+/* Class = "UILabel"; text = "Your combination of drugs yielded conflicts. Would you like to receive and email with a summary?"; ObjectID = "sVK-2c-ZMD"; */
+"sVK-2c-ZMD.text" = "Twoja mieszanka leków zawiera leki niezgodne ze sobą. Czy chcesz otrzymać podsumowanie na adres email?";
+
+/* Class = "UIButton"; normalTitle = "SEND EMAIL"; ObjectID = "vvM-2r-fpv"; */
+"vvM-2r-fpv.normalTitle" = "WYŚLIJ EMAIL";
+
+/* Class = "UILabel"; text = "SUMMARY"; ObjectID = "wOL-84-t5a"; */
+"wOL-84-t5a.text" = "PODSUMOWANIE";

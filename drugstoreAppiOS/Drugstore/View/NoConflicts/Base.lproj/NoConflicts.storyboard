@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="K3y-z8-yVd">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--No Conflicts View Controller-->
+        <scene sceneID="GeC-2V-7BQ">
+            <objects>
+                <viewController id="K3y-z8-yVd" customClass="NoConflictsViewController" customModule="Drugstore" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pan-6B-CDc">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gk5-wf-GMN">
+                                <rect key="frame" x="134" y="860" width="500" height="100"/>
+                                <color key="backgroundColor" red="0.16862745098039217" green="0.77254901960784317" blue="0.54509803921568623" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Szf-V7-0U9"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="500" id="lSd-Lu-AlV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="50"/>
+                                <state key="normal" title="END">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="endPressed:" destination="K3y-z8-yVd" eventType="touchUpInside" id="ynP-r7-aWX"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your combination of drugs doesn't seem to yield any conflicts." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JEH-gJ-Jfj">
+                                <rect key="frame" x="0.0" y="204" width="768" height="81.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <color key="textColor" red="0.38431372549019605" green="0.72549019607843135" blue="0.76078431372549016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="NoConflictsTick" translatesAutoresizingMaskIntoConstraints="NO" id="6Sh-Go-AtA">
+                                <rect key="frame" x="259" y="387" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="22v-bV-Q7a"/>
+                                    <constraint firstAttribute="width" secondItem="6Sh-Go-AtA" secondAttribute="height" multiplier="1:1" id="SnD-ey-yX4"/>
+                                    <constraint firstAttribute="width" constant="250" id="rff-CX-5nG"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUMMARY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6nB-pR-dJS">
+                                <rect key="frame" x="0.0" y="20" width="768" height="72"/>
+                                <color key="backgroundColor" red="0.46666666670000001" green="0.85882352939999995" blue="0.90196078430000004" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="fHI-49-uPI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="60"/>
+                                <color key="textColor" red="0.74901960779999999" green="0.96078431369999995" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NO CONFLICTS FOUND" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jkS-Th-Gmk">
+                                <rect key="frame" x="8" y="124" width="752" height="48"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <color key="textColor" red="0.027450980392156862" green="0.54509803921568623" blue="0.49411764705882355" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.64313725490196072" green="0.92941176470588238" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Sh-Go-AtA" firstAttribute="centerY" secondItem="Pan-6B-CDc" secondAttribute="centerY" id="2JP-dt-Au4"/>
+                            <constraint firstItem="jkS-Th-Gmk" firstAttribute="leading" secondItem="TBL-Ts-CLl" secondAttribute="leading" constant="8" id="7CH-eq-VBK"/>
+                            <constraint firstItem="6Sh-Go-AtA" firstAttribute="centerX" secondItem="Pan-6B-CDc" secondAttribute="centerX" id="BGe-Jv-qud"/>
+                            <constraint firstItem="TBL-Ts-CLl" firstAttribute="trailing" secondItem="jkS-Th-Gmk" secondAttribute="trailing" constant="8" id="JAZ-va-Xhy"/>
+                            <constraint firstItem="JEH-gJ-Jfj" firstAttribute="leading" secondItem="TBL-Ts-CLl" secondAttribute="leading" id="P13-gA-FoK"/>
+                            <constraint firstItem="6nB-pR-dJS" firstAttribute="leading" secondItem="Pan-6B-CDc" secondAttribute="leading" id="S8D-CM-J1N"/>
+                            <constraint firstItem="TBL-Ts-CLl" firstAttribute="trailing" secondItem="JEH-gJ-Jfj" secondAttribute="trailing" id="TXW-um-Swx"/>
+                            <constraint firstItem="jkS-Th-Gmk" firstAttribute="top" secondItem="6nB-pR-dJS" secondAttribute="bottom" constant="32" id="V3D-Gk-4ZV"/>
+                            <constraint firstItem="gk5-wf-GMN" firstAttribute="centerX" secondItem="Pan-6B-CDc" secondAttribute="centerX" id="aL5-mv-mGn"/>
+                            <constraint firstItem="6nB-pR-dJS" firstAttribute="top" secondItem="TBL-Ts-CLl" secondAttribute="top" id="d4S-tN-2L3"/>
+                            <constraint firstItem="JEH-gJ-Jfj" firstAttribute="top" secondItem="jkS-Th-Gmk" secondAttribute="bottom" constant="32" id="fNL-KN-0tS"/>
+                            <constraint firstItem="TBL-Ts-CLl" firstAttribute="bottom" secondItem="gk5-wf-GMN" secondAttribute="bottom" constant="64" id="jRt-cZ-x9v"/>
+                            <constraint firstItem="TBL-Ts-CLl" firstAttribute="trailing" secondItem="6nB-pR-dJS" secondAttribute="trailing" id="wG3-Gu-XyU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TBL-Ts-CLl"/>
+                    </view>
+                    <connections>
+                        <outlet property="endButton" destination="gk5-wf-GMN" id="THy-hD-awz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fuI-cj-AhL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-93.75" y="0.0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="NoConflictsTick" width="398" height="398"/>
+    </resources>
+</document>
